@@ -1,26 +1,29 @@
-QT += core gui # 用来表示Qt用到了那些库，也就是用到了哪些模块，并添加到当前的Qt的项目中去，就比如说这个项目就用到了core gui模块
+QT += core gui # 用来表示你这个Qt用到了哪些库，也就是用到了哪些模块，并添加到当前的Qt的项目中去，就比如说这个项目就用到了core gui模块
 # 那这两个模块又有什么用呢，首先的话就是core这个模块，这个模块是Qt应用程序的基础，因为他主要是实现了Qt的信号与槽的通讯机制，事件系统，并发多线程，容器
 # 那这个gui模块又是有什么用呢，gui模块是图形界面的基础，因为他实现了图形界面的核心功能，并且他是所以的Qt图形应用程序的基础模块
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets # 这个是用来判断当前的Qt版本是否是大于4，如果大于四的话，那就还要在添加一个widgets模块，那为什么呢，因为在Qt4的之前的版本（包括Qt4的），widgets这个模块他是在gui这个模块里面的，但是在Qt5之后的版本（包括Qt5）这个模块就是独立了出来
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets # 这个是用来判断当前的Qt版本是否是大于4，如果大于四的话，那就还要在添加一个widgets模块，那为什么呢，因为在Qt4的之前的版本（包括Qt4的），widgets这个模块他是在gui这个模块里面的，但是在Qt5之后的版本（包括Qt5）这个模块就是独立了出来，也就是说这句代码的意思就是判断当前的Qt的版本是否是大于Qt4的，如果大于4的话就将widgets这个模块也添加到当前的项目中去
 
 CONFIG += c++17 # 指定用到的C++版本
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+# DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 # 那上面这段代码是什么意思呢，意思就是是否要禁用掉Qt6之后的一些API
 
 
 SOURCES += \            # 指定这个Qt项目的源文件
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    mainwindow1.cpp
 
 HEADERS += \            # 指定这个Qt项目的头文件
-    mainwindow.h
+    mainwindow.h \
+    mainwindow1.h
 
 FORMS += \              # 指定这个Qt项目的ui文件，也就是设计文件
-    mainwindow.ui
+    mainwindow.ui \
+    mainwindow1.ui
 
 # Default rules for deployment.
 # 下面这段代码是什么意思呢
