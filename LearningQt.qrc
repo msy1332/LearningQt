@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/Iconflie.ico</file>
+    </qresource>
+</RCC>

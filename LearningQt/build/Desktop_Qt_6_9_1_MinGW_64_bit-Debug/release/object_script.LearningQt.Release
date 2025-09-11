@@ -1,0 +1,10 @@
+release/main.o
+release/mainwindow.o
+release/mainwindow1.o
+release/studyqpushbutton.o
+release/studyqwidget.o
+release/qrc_LearningQt.o
+release/moc_mainwindow.o
+release/moc_mainwindow1.o
+release/moc_studyqpushbutton.o
+release/moc_studyqwidget.o

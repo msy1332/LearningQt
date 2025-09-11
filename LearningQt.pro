@@ -15,15 +15,21 @@ CONFIG += c++17 # 指定用到的C++版本
 SOURCES += \            # 指定这个Qt项目的源文件
     main.cpp \
     mainwindow.cpp \
-    mainwindow1.cpp
+    mainwindow1.cpp \
+    studyqpushbutton.cpp \
+    studyqwidget.cpp
 
 HEADERS += \            # 指定这个Qt项目的头文件
     mainwindow.h \
-    mainwindow1.h
+    mainwindow1.h \
+    studyqpushbutton.h \
+    studyqwidget.h
 
 FORMS += \              # 指定这个Qt项目的ui文件，也就是设计文件
     mainwindow.ui \
-    mainwindow1.ui
+    mainwindow1.ui \
+    studyqpushbutton.ui \
+    studyqwidget.ui
 
 # Default rules for deployment.
 # 下面这段代码是什么意思呢
@@ -33,3 +39,6 @@ FORMS += \              # 指定这个Qt项目的ui文件，也就是设计文�
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    LearningQt.qrc
