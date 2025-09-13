@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>res/Iconflie.ico</file>
+        <file>res/start.ico</file>
+        <file>res/stop.ico</file>
     </qresource>
 </RCC>
