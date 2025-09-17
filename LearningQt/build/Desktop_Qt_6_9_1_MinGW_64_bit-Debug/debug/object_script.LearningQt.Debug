@@ -1,10 +1,12 @@
 debug/main.o
 debug/mainwindow.o
 debug/mainwindow1.o
+debug/studyqlabel.o
 debug/studyqpushbutton.o
 debug/studyqwidget.o
 debug/qrc_LearningQt.o
 debug/moc_mainwindow.o
 debug/moc_mainwindow1.o
+debug/moc_studyqlabel.o
 debug/moc_studyqpushbutton.o
 debug/moc_studyqwidget.o
