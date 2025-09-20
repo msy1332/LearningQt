@@ -16,6 +16,7 @@ SOURCES += \            # 指定这个Qt项目的源文件
     main.cpp \
     mainwindow.cpp \
     mainwindow1.cpp \
+    studyfiledialog.cpp \
     studyqlabel.cpp \
     studyqpushbutton.cpp \
     studyqwidget.cpp
@@ -23,6 +24,7 @@ SOURCES += \            # 指定这个Qt项目的源文件
 HEADERS += \            # 指定这个Qt项目的头文件
     mainwindow.h \
     mainwindow1.h \
+    studyfiledialog.h \
     studyqlabel.h \
     studyqpushbutton.h \
     studyqwidget.h
@@ -30,6 +32,7 @@ HEADERS += \            # 指定这个Qt项目的头文件
 FORMS += \              # 指定这个Qt项目的ui文件，也就是设计文件
     mainwindow.ui \
     mainwindow1.ui \
+    studyfiledialog.ui \
     studyqlabel.ui \
     studyqpushbutton.ui \
     studyqwidget.ui
