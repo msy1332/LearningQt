@@ -4,6 +4,7 @@
 #include "studyqpushbutton.h" // 包含我们定义的这个窗口类头文件
 #include "studyqlabel.h" // 包含我们定义的这个窗口类头文件
 #include "studyfiledialog.h" // 包含我们自定义窗口类头文件
+#include "studylineedit.h" // 包含我们自定义窗口类头文件
 #include <QApplication> // 包含这个Qt的这个应用程序类的这个头文件
 #include <QPushButton>
 
@@ -29,5 +30,7 @@ int main(int argc, char *argv[]) // 这个话就是这个Qt应用程序的入口
     StudyFileDialog studyFileDialog; // 实例化一个窗口类对象
     studyFileDialog.show(); // 调用了窗口类的show方法来将这个方法，来将这个窗口给显示出来
 
+    StudyLineEdit studyLineEdit; // 实例化一个窗口对象
+    studyLineEdit.show(); // 调用窗口对象的show方法来将这个窗口给显示出来
     return a.exec(); // 调用了应用程序类的exec方法，那这个方法有什么用呢，其实啊这个的作用就是进入到窗口的事件循环，因为只有进入到了事件循环之后窗口它才会处理一些鼠标事件和键盘事件等等
 }

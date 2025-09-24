@@ -9,9 +9,9 @@ StudyQWidget::StudyQWidget(QWidget *parent)
     ui->setupUi(this);
 
     // 初始化信号槽
-    connect(ui->pushButton_5,&ui->pushButton_5->clicked,this,&showMaximized);
-    connect(ui->pushButton_6,&ui->pushButton_6->clicked,this,&showMinimized);
-    connect(ui->pushButton_8,&ui->pushButton_8->clicked,this,&showNormal);
+    connect(ui->pushButton_5,&QPushButton::clicked,this,&QWidget::showMaximized);
+    connect(ui->pushButton_6,&QPushButton::clicked,this,&QWidget::showMinimized);
+    connect(ui->pushButton_8,&QPushButton::clicked,this,&QWidget::showNormal);
 }
 
 StudyQWidget::~StudyQWidget()

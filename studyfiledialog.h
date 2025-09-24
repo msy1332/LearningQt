@@ -41,7 +41,7 @@
     setViewMode(QFileDialog)
 
     **********************然后就是第五个常用的方法，也就是selectedFiles()这个方法，那这个方法有什么用呢，其实啊这个方法的作用就是获取用户选择文件的路径**********************
-    const QString selectedFiles() const
+    const QStringList selectedFiles() const
 
     但是呢我这里又有一个需求就是我想获取这个文件的大小，位置，名字等等文件详细信息呢，那怎么获取呢，这时候就要配合另一个类来实现了，那这个时什么类呢，其实啊这个类就是这个：QFileInfo
     那QFileInfo这个类有哪些常用的方法呢
